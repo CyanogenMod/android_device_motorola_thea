@@ -38,7 +38,7 @@
 #include "init_msm.h"
 
 void gsm_properties(bool msim);
-void cdma_properties(char cdma_sub[], char network[]);
+void cdma_properties(char const * cdma_sub, char const * network);
 
 void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *board_type)
 {
@@ -117,7 +117,7 @@ void gsm_properties(bool msim)
     }
 }
 
-void cdma_properties(char cdma_sub[], char network[])
+void cdma_properties(char const * cdma_sub, char const * network)
 {
     property_set("DEVICE_PROVISIONED", "1");
     property_set("persist.radio.dont_use_dsd", "true");
