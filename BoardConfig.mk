@@ -27,7 +27,7 @@ TARGET_LIBINIT_DEFINES_FILE := $(DEVICE_PATH)/init/init_thea.cpp
 TARGET_OTA_ASSERT_DEVICE := thea,thea_umtsds,thea_ds,XT1072,XT1078,XT1079
 
 # Kernel
-BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
+BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 TARGET_KERNEL_CONFIG := titan_defconfig
 
 # Partitions
